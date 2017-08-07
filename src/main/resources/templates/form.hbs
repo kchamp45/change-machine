@@ -1,0 +1,23 @@
+{{#partial "title" }}
+  Here is the breakdown of your change!
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+<h1>Fill out the form below!</h1>
+<form action='/coin_change'>
+ <div class="form-group">
+   <label for="customer">Your name</label>
+   <input id="customer" name="customer" class="form-control" type="text">
+ </div>
+ <div class="form-group">
+   <label for="cashInput">Enter the amount that you would like to convert into change</label>
+   <input id="cashInput" name="cashInput" class="form-control" type="number">
+ </div>
+ <button type="submit" class="btn">Go!</button>
+</form>
+<!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}
